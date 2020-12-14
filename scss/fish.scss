@@ -1,0 +1,480 @@
+@import '_param';
+html {
+    font-size: 10px;
+}
+
+*,
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 375px;
+    // border: 1px solid;
+    min-height: 100vh;
+}
+
+.header {
+    &__style {
+        width: 100%;
+        height: 60px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__tel {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 29px;
+        color: $color-black;
+    }
+}
+
+.main {
+    &__style {
+        // text-align: center;
+        width: 100%;
+    }
+}
+
+.cover {
+    background-color: $color-blue;
+    width: 100%;
+    min-height: 350px;
+    &__title {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: 305px;
+        margin: 0 auto;
+    }
+    &__title-h1 {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 3.9rem;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    &__title-h2 {
+        font-family: $font-main;
+        font-weight: 300;
+        font-size: 2.6rem;
+        line-height: 30px;
+        color: $color-white;
+    }
+    &__img {}
+    &__desc {
+        width: 300px;
+        font-family: $font-main;
+        font-weight: 300;
+        font-size: 2.5rem;
+        line-height: 29px;
+        color: $color-white;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__desc-text {}
+}
+
+.choose {
+    padding-top: 20px;
+    margin: 0 auto;
+    &__text {
+        font-family: $font-main;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 23px;
+        color: $color-black;
+        text-align: left;
+        margin: 0 auto;
+        width: 300px;
+        padding-bottom: 25px;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 140px;
+        width: 100%;
+        align-items: center;
+    }
+    &__btn-know {
+        background: $color-brown;
+        border-radius: 15px;
+    }
+    &__btn-advice {
+        background: $color-blue;
+    }
+}
+
+.btn-common {
+    width: 230px;
+    height: 60px;
+    border-radius: 15px;
+    font-family: $font-title;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    outline: none;
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.type-list {
+    &__style {
+        background-color: $color-brown;
+        width: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    // .type-list__title
+    &__title {
+        margin: 0 auto;
+        width: 330px;
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 23px;
+        color: $color-white;
+        padding-bottom: 10px;
+    }
+    &__items {
+        width: 330px;
+        margin: 0 auto;
+        list-style: none;
+    }
+    &__item {
+        padding-bottom: 10px;
+        &:nth-child(even) {
+            .type-list__text {
+                color: $color-white;
+            }
+        }
+    }
+    // .type-list__checkbox
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+    }
+    // .type-list__text
+    &__text {
+        font-family: $font-main;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: $color-black;
+        padding-left: 5px;
+    }
+    // .type-list__btn
+    &__button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    &__btn {
+        background-color: $color-black;
+    }
+}
+
+.category {
+    &__style {
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 25px;
+    }
+    // .category__item
+    &__item {}
+    &__title {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 30px;
+        color: $color-black;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    &__card {}
+    &__subtitle {
+        width: 90%;
+        height: 30px;
+        background-color: $color-brown;
+        color: $color-white;
+        font-family: $font-main;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 30px;
+        padding-left: 5px;
+    }
+    &__img {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &__price {
+        width: 90%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    // .category__price-left
+    &__price-left {}
+    &__price-kg {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 23px;
+        color: $color-black;
+    }
+    &__price-netto {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 23px;
+        color: $color-black;
+    }
+    &__price-final {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 47px;
+        color: $color-black;
+    }
+    &__desc {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 30px;
+        color: $color-black;
+    }
+    &__button {
+        padding: 30px 0 60px 0;
+        width: 90%;
+        text-align: center;
+    }
+    &__btn {
+        width: 230px;
+        height: 50px;
+        background: #E5E5E5;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-brown;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__common-button {
+        width: 90%;
+        text-align: center;
+    }
+    &__last-btn {
+        width: 230px;
+        height: 60px;
+        background: $color-brown;
+        border-radius: 15px;
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        outline: none;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.form {
+    // .form__style
+    &__style {}
+    &__title {
+        width: 100%;
+        height: 65px;
+        background-color: $color-blue;
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: center;
+    }
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    &__lable {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 21px;
+        color: $color-black;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    &__input {
+        width: 325px;
+        height: 48px;
+        background: $color-white;
+        border: 1px solid #C4C4C4;
+        border-radius: 15px;
+        padding-left: 10px;
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 21px;
+        color: $color-black;
+        outline: none;
+        &::placeholder {
+            font-family: $font-main;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 21px;
+            color: #a1a1a1;
+        }
+    }
+    &__button {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &__btn {
+        width: 230px;
+        height: 60px;
+        background: $color-black;
+        border-radius: 15px;
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        outline: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.order {
+    &__style {
+        width: 100%;
+        min-height: 100vh;
+        background-color: $color-blue;
+    }
+    &__final {
+        padding: 25px 0 20px 25px;
+    }
+    &__name {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    &__thnx {
+        font-family: $font-title;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    &__text {
+        font-family: $font-main;
+        font-weight: 300;
+        font-size: 2.1rem;
+        line-height: 30px;
+        color: $color-white;
+        padding-top: 10px;
+    }
+    &__img {
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__ref-link {
+        font-family: $font-main;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 21px;
+        // text-decoration-line: underline;
+        color: $color-white;
+        width: 200px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+
+.event {
+    &__style {
+        width: 100%;
+        min-height: 100vh;
+        background-color: $color-blue;
+    }
+    &__container {
+        padding: 30px 5px 20px 25px;
+    }
+    &__text {
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    &__item {
+        font-family: $font-main;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+    // .event__button
+    &__button {}
+    // .event__btn
+    &__btn {}
+}
