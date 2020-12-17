@@ -6,6 +6,10 @@ class Seafood {
         this.allGoods;
         this.orderGoods = [];
         this.dinnerType;
+        this.sendMsg = '';
+        this.dataOrder = 'Заказ:';
+        this.clInfo = '';
+
         document.getElementById('buttons').addEventListener('click', (evt) => {
             evt.preventDefault();
             let e = evt.target
@@ -151,19 +155,18 @@ class Seafood {
         </section>`;
         this.screen.insertAdjacentHTML('beforeend', strMainCode);
 
-        let dataOrder = 'Заказ:';
+        // let dataOrder = 'Заказ:';
         let i = false;
         this.orderGoods.forEach((index) => {
-            (i) ? dataOrder = `${dataOrder},`: dataOrder = dataOrder, i = true;
-            dataOrder = `${dataOrder} ${this.allGoods.find(x => x.good_id == index).name}`;
+            (i) ? this.dataOrder = `${this.dataOrder},`: this.dataOrder = this.dataOrder, i = true;
+            this.dataOrder = `${this.dataOrder} ${this.allGoods.find(x => x.good_id == index).name}`;
         });
 
-        let clInfo = '';
+        // let clInfo = '';
         document.getElementById('rightorder').addEventListener('click', () => {
-            clInfo = `${clInfo}Имя: ${document.getElementById('name').value} **** Телефон: ${document.getElementById('tel').value} **** Адрес доставки: ${document.getElementById('address').value} **** Дата и время доставки: ${document.getElementById('deldate').value} **** Лучшее время для звонка: ${document.getElementById('calldate').value} **** Кто порекомендовал: ${document.getElementById('recom').value}`;
-            console.log(dataOrder);
-            console.log(clInfo);
-            this.datasend(dataOrder, clInfo, document.getElementById('name').value);
+            this.clInfo = `${this.clInfo}Имя: ${document.getElementById('name').value} **** Телефон: ${document.getElementById('tel').value} **** Адрес доставки: ${document.getElementById('address').value} **** Дата и время доставки: ${document.getElementById('deldate').value} **** Лучшее время для звонка: ${document.getElementById('calldate').value} **** Кто порекомендовал: ${document.getElementById('recom').value}`;
+            this.sendTelegram();
+            this.datasend(document.getElementById('name').value);
         })
     }
     datasend(zakaz, klient, name) {
@@ -187,9 +190,10 @@ class Seafood {
                     <h2 class="cover__title-h2">Морепродукты с Севера</h2>
                 </div>
                 <img class="cover__img" src="img/cover-bg-img.png" alt="Морепродукты с Севера" width="100%" height="auto">
-                <p class="order__ref-link">Скопируйте ссылку, чтобы рекомендовать нас своим</p>
+                
             </section>
         `;
+        // <p class="order__ref-link">Скопируйте ссылку, чтобы рекомендовать нас своим</p>
         this.screen.insertAdjacentHTML('beforeend', strMainCode);
     }
     needHelp() {
@@ -219,20 +223,20 @@ class Seafood {
                 <div class="clarify__inputs">
                     <div class="clarify__input-label">
                         <p class="clarify__text">Сколько планируется гостей?</p>
-                        <input class="clarify__input" type="text" placeholder="Сколько планируется гостей">
+                        <input class="clarify__input" type="text" placeholder="Сколько планируется гостей" id="guest">
                     </div>
                     <div class="clarify__input-label">
                         <p class="clarify__text">Какой планируете бюджет?</p>
-                        <input class="clarify__input" type="text" placeholder="Какой планируете бюджет">
+                        <input class="clarify__input" type="text" placeholder="Какой планируете бюджет" id="budget">
                     </div>
                 </div>
                 <div class="clarify__checks">
                     <div class="clarify__check-label">
-                        <input class="clarify__checkbox" type="checkbox" name="" id="suprise">
+                        <input class="clarify__checkbox" type="checkbox" id="suprise">
                         <label class="clarify__label" for="suprise">Удивить гостей <br>(подберём что–то необычное)</label>
                     </div>
                     <div class="clarify__check-label">
-                        <input class="clarify__checkbox" type="checkbox" name="" id="gift">
+                        <input class="clarify__checkbox" type="checkbox" id="gift">
                         <label class="clarify__label" for="gift">Подарочная упаковка</label>
                     </div>
                 </div>
@@ -245,9 +249,32 @@ class Seafood {
         this.screen.innerHTML = '';
         this.screen.insertAdjacentHTML('beforeend', strMainCode);
 
+
+        let suprise = document.getElementById('suprise');
+        let gift = document.getElementById('gift');
+
         document.getElementById('questsbudget').addEventListener('click', () => {
+            let guest = document.getElementById('guest').value;
+            let budget = document.getElementById('budget').value;
+            this.sendMsg = `Количество гостей: ${guest}. **** Примерный бюджет: ${budget}`;
+            if (suprise.checked) { this.sendMsg = this.sendMsg + `Нужно удивить гостей (что–то необычное). `; };
+
+            if (gift.checked) { this.sendMsg = this.sendMsg + ` Завернуть в подарочную упаковку.`; }
             this.contact();
         })
+    }
+    sendTelegram() {
+        let numbers = ['80268845', '1034923687'];
+        const token = '1465657620:AAHl6h6W5wQE3mU-PeRbMRYgGarcT5xfwuw';
+        // const chatId = '';
+        let msg = this.sendMsg + this.dataOrder + this.clInfo;
+        numbers.forEach((e) => {
+            let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${e}&text=`;
+            let xhhtp = new XMLHttpRequest();
+            xhhtp.open("GET", url + msg, true);
+            xhhtp.send();
+        })
+
     }
 
 }
