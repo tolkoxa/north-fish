@@ -91,7 +91,7 @@ class Seafood {
                     <div class="category__card">
                         <p class="category__subtitle">${index.name}</p>
                         <div class="category__img">
-                            <img src="img/category__img.png" alt="${index.name}">
+                            <img src="img/goods/${index.img}" alt="${index.name}" width="100%" height="auto">
                         </div>
                         <div class="category__price">
                             <div class="category__price-left">
@@ -101,7 +101,7 @@ class Seafood {
                             <p class="category__price-final"></p>
                         </div>
                         <p class="category__desc">${index.desc}</p>
-                        <div class="category__button">
+                        <div class="category__button" id="${index.good_id}">
                             <button class="category__btn" name="ordergood" data-good="${index.good_id}">Добавить в заказ</button>
                         </div>
                     </div>
@@ -121,6 +121,8 @@ class Seafood {
 
             if (e.name === 'ordergood') {
                 this.orderGoods.push(e.dataset.good);
+                document.getElementById(e.dataset.good).innerHTML = '';
+                document.getElementById(e.dataset.good).innerHTML = '<p class="category__add">Добавлено</p>';
             }
         });
 

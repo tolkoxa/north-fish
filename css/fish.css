@@ -235,6 +235,14 @@ body {
   color: #D78802; }
   .category__btn:hover {
     cursor: pointer; }
+.category__add {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000; }
 .category__common-button {
   width: 90%;
   text-align: center; }

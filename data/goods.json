@@ -2,43 +2,43 @@
         "cat_id": 1,
         "good_id": 11,
         "name": "Белуга г/к",
-        "img": "1_11.png",
+        "img": "1_11.jpg",
         "price": 3200,
         "netto": "",
-        "desc": "1 рыбы хватает на 3–4 человека"
+        "desc": ""
     },
     {
         "cat_id": 1,
         "good_id": 12,
         "name": "Спинки Белуга г/к",
-        "img": "1_12.png",
+        "img": "1_12.jpg",
         "price": 3000,
         "netto": "",
-        "desc": "1 кг хватает на 3–4 человека"
+        "desc": ""
     },
     {
         "cat_id": 1,
         "good_id": 13,
         "name": "Осётр г/к",
-        "img": "1_13.png",
+        "img": "noimg.png",
         "price": 3100,
         "netto": "",
-        "desc": "1 рыбы хватает на 5 человек"
+        "desc": ""
     },
     {
         "cat_id": 2,
         "good_id": 21,
         "name": "Белуга х/к",
-        "img": "2_21.png",
+        "img": "noimg.png",
         "price": 3200,
         "netto": "",
-        "desc": "1 кг хватает на 3–4 человека"
+        "desc": ""
     },
     {
         "cat_id": 2,
         "good_id": 22,
         "name": "Палтус х/к",
-        "img": "2_22.png",
+        "img": "2_22.jpg",
         "price": 2900,
         "netto": "",
         "desc": "Палтус-с-с-с"
@@ -47,16 +47,16 @@
         "cat_id": 2,
         "good_id": 23,
         "name": "Тунец х/к",
-        "img": "2_23.png",
+        "img": "2_23.jpg",
         "price": 2950,
         "netto": "",
-        "desc": "Тунец. Просто тунец."
+        "desc": ""
     },
     {
         "cat_id": 2,
         "good_id": 24,
         "name": "Чавыча дикая х/к",
-        "img": "2_24.png",
+        "img": "2_24.jpg",
         "price": 2850,
         "netto": "",
         "desc": ""
@@ -64,8 +64,8 @@
     {
         "cat_id": 2,
         "good_id": 25,
-        "name": "Семга Дикий лосось х/к",
-        "img": "2_25.png",
+        "name": "Сёмга Дикий лосось х/к",
+        "img": "noimg.png",
         "price": 3000,
         "netto": "",
         "desc": ""
@@ -73,8 +73,8 @@
     {
         "cat_id": 2,
         "good_id": 26,
-        "name": "Семга Дикий лосось c/c",
-        "img": "2_26.png",
+        "name": "Сёмга Дикий лосось c/c",
+        "img": "2_26.jpg",
         "price": 3000,
         "netto": "",
         "desc": ""
@@ -83,7 +83,7 @@
         "cat_id": 2,
         "good_id": 27,
         "name": "Муксун х/к",
-        "img": "2_27.png",
+        "img": "2_27.jpg",
         "price": 2200,
         "netto": "",
         "desc": ""
@@ -92,7 +92,7 @@
         "cat_id": 2,
         "good_id": 28,
         "name": "Омуль х/к",
-        "img": "2_28.png",
+        "img": "2_28.jpg",
         "price": 2100,
         "netto": "",
         "desc": ""
@@ -101,7 +101,7 @@
         "cat_id": 3,
         "good_id": 31,
         "name": "Икра Форели",
-        "img": "3_31.png",
+        "img": "3_31.jpg",
         "price": 3600,
         "netto": "",
         "desc": ""
@@ -110,7 +110,7 @@
         "cat_id": 3,
         "good_id": 32,
         "name": "Икра Кижуч",
-        "img": "3_32.png",
+        "img": "3_32.jpg",
         "price": 3800,
         "netto": "",
         "desc": ""
@@ -119,7 +119,7 @@
         "cat_id": 3,
         "good_id": 33,
         "name": "Икра Чавыча",
-        "img": "3_33.png",
+        "img": "noimg.png",
         "price": 4000,
         "netto": "",
         "desc": ""
@@ -128,7 +128,7 @@
         "cat_id": 3,
         "good_id": 34,
         "name": "Икра Кеты",
-        "img": "3_34.png",
+        "img": "noimg.png",
         "price": 3800,
         "netto": "",
         "desc": ""
@@ -137,7 +137,7 @@
         "cat_id": 3,
         "good_id": 35,
         "name": "Печень трески",
-        "img": "3_35.png",
+        "img": "3_35.jpg",
         "price": 530,
         "netto": "",
         "desc": ""
@@ -146,7 +146,7 @@
         "cat_id": 4,
         "good_id": 41,
         "name": "Краб экстра",
-        "img": "4_41.png",
+        "img": "4_41.jpg",
         "price": 5000,
         "netto": "",
         "desc": ""
@@ -155,7 +155,7 @@
         "cat_id": 4,
         "good_id": 42,
         "name": "Краб 1я фаланга",
-        "img": "4_42.png",
+        "img": "4_42.jpg",
         "price": 4500,
         "netto": "",
         "desc": ""
@@ -164,7 +164,7 @@
         "cat_id": 4,
         "good_id": 43,
         "name": "Краб набор",
-        "img": "4_43.png",
+        "img": "4_43.jpg",
         "price": 2700,
         "netto": "",
         "desc": ""
@@ -173,7 +173,7 @@
         "cat_id": 4,
         "good_id": 44,
         "name": "Клешня L5",
-        "img": "4_44.png",
+        "img": "noimg.png",
         "price": 2100,
         "netto": "",
         "desc": ""
@@ -182,7 +182,7 @@
         "cat_id": 5,
         "good_id": 51,
         "name": "Креветка Ботан",
-        "img": "5_51.png",
+        "img": "5_51.jpg",
         "price": 1300,
         "netto": "",
         "desc": ""
@@ -191,7 +191,7 @@
         "cat_id": 5,
         "good_id": 52,
         "name": "Креветка очищенная Магадан",
-        "img": "5_52.png",
+        "img": "5_52.jpg",
         "price": 1100,
         "netto": "",
         "desc": ""
@@ -200,7 +200,7 @@
         "cat_id": 5,
         "good_id": 53,
         "name": "Креветка Северная шримс 70/90",
-        "img": "5_53.png",
+        "img": "5_51.jpg",
         "price": 1100,
         "netto": "",
         "desc": ""
@@ -209,7 +209,7 @@
         "cat_id": 5,
         "good_id": 54,
         "name": "Креветка Медвежонок",
-        "img": "5_54.png",
+        "img": "5_52.jpg",
         "price": 1200,
         "netto": "",
         "desc": ""
@@ -218,7 +218,7 @@
         "cat_id": 5,
         "good_id": 55,
         "name": "Креветка северная 50/70",
-        "img": "5_55.png",
+        "img": "5_51.jpg",
         "price": 800,
         "netto": "",
         "desc": ""
@@ -227,7 +227,7 @@
         "cat_id": 5,
         "good_id": 56,
         "name": "Креветка Северная Магадан",
-        "img": "5_56.png",
+        "img": "5_52.jpg",
         "price": 900,
         "netto": "",
         "desc": ""
@@ -236,7 +236,7 @@
         "cat_id": 6,
         "good_id": 61,
         "name": "Гребешок 10/16",
-        "img": "6_61.png",
+        "img": "6_61.jpg",
         "price": 2300,
         "netto": "",
         "desc": ""
@@ -245,7 +245,7 @@
         "cat_id": 6,
         "good_id": 62,
         "name": "Гребешок 30/35",
-        "img": "6_62.png",
+        "img": "6_61.jpg",
         "price": 1800,
         "netto": "",
         "desc": ""
@@ -254,7 +254,7 @@
         "cat_id": 7,
         "good_id": 71,
         "name": "Угорь",
-        "img": "7_71.png",
+        "img": "7_71.jpg",
         "price": 1550,
         "netto": "",
         "desc": ""
@@ -263,7 +263,7 @@
         "cat_id": 7,
         "good_id": 72,
         "name": "Угорь в кляре",
-        "img": "7_72.png",
+        "img": "7_71.jpg",
         "price": 1200,
         "netto": "",
         "desc": ""
@@ -272,7 +272,7 @@
         "cat_id": 8,
         "good_id": 81,
         "name": "Осьминог",
-        "img": "8_81.png",
+        "img": "8_81.jpg",
         "price": 700,
         "netto": "",
         "desc": ""
@@ -281,7 +281,7 @@
         "cat_id": 9,
         "good_id": 91,
         "name": "Осётр свежемороженый",
-        "img": "9_91.png",
+        "img": "9_91.jpg",
         "price": 1400,
         "netto": "",
         "desc": ""
@@ -290,7 +290,7 @@
         "cat_id": 10,
         "good_id": 101,
         "name": "Белуга свежемороженая",
-        "img": "10_101.png",
+        "img": "noimg.png",
         "price": 1400,
         "netto": "",
         "desc": ""

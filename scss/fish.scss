@@ -300,6 +300,15 @@ body {
             cursor: pointer;
         }
     }
+    &__add {
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-black;
+    }
     &__common-button {
         width: 90%;
         text-align: center;
